@@ -11,7 +11,21 @@ TypeScript is a superset of JavaScript that adds optional static types to the la
 ## Installation
 To install TypeScript, you need to have Node.js installed. You can install TypeScript using npm, the Node.js package manager. Open a terminal window and run the following command:
 ```bash
-npm install -g typescript
+npm install -g typescript # Install TypeScript globally
+
+tsc --version # Verify the installation
+
+# install ts-node to run TypeScript files directly
+npm install -g ts-node # Install ts-node globally
+
+ts-node --version # Verify the installation
+
+# install typescript locally in a project
+npm install typescript --save-dev # Install TypeScript locally
+
+# install ts-node locally in a project
+npm install ts-node --save-dev # Install ts-node locally
+
 ```
 
 ## Usage
