@@ -34,4 +34,3 @@ To compile a TypeScript file, use the `tsc` command followed by the name of the 
 tsc app.ts
 ```
 This will generate a JavaScript file named `app.js` that you can run using Node.js or in a browser.
-```
