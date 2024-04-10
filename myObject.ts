@@ -17,3 +17,107 @@ const userInfo ={
 }
 createUser( userInfo ) // No error ,but it should have given error as email is not part of the function parameter type. 
 
+
+//--------------------------------- types ------------------------------------//
+
+// combining types
+type cardNumber = {
+    cardNumber: number
+}
+type cardHolder = {
+    cardHolder: string
+}
+type expiryDate = {
+    expiryDate: string
+}
+type cardDetails = cardNumber & cardHolder & expiryDate & { // combining types using &
+    cvv: number
+}
+
+
+type User = {
+    name: string,
+    age: number,
+    email: string
+    carddetails: cardDetails // using the combined type
+}
+
+const user : User = {
+    name: "Jane",
+    // age: "22", // Error: Type 'string' is not assignable to type 'number'.
+    age: 22,
+    email: "a@b.com",
+    carddetails: {
+        cardNumber: 1234567890,
+        cardHolder: "Jane",
+        expiryDate: "12/22",
+        cvv: 123
+    }
+}
+
+console.log(user);
+
+//--------------------------------- interfaces ------------------------------------//
+
+// combining interfaces
+interface CardNumber {
+    cardNumber: number
+}
+interface CardHolder {
+    cardHolder: string
+}
+interface ExpiryDate {
+    expiryDate: string
+}
+interface CardDetails extends CardNumber, CardHolder, ExpiryDate { // combining interfaces using extends
+    cvv: number
+}
+
+interface User1 {
+    name: string,
+    age: number,
+    email: string
+    carddetails: CardDetails // using the combined interface
+}
+
+const user1 : User1 = {
+    name: "Jane",
+    // age: "22", // Error: Type 'string' is not assignable to type 'number'.
+    age: 22,
+    email: "es@cs.com",
+    carddetails: {
+        cardNumber: 1234567890,
+        cardHolder: "Jane",
+        expiryDate: "12/22",
+        cvv: 123
+    }
+}
+
+console.log(user1);
+
+//--------------------------------- classes ------------------------------------//
+
+// class with constructor
+class User2 {
+    name: string;
+    age: number;
+    email: string;
+    constructor(name: string, age: number, email: string) {
+        this.name = name;
+        this.age = age;
+        this.email = email;
+    }
+}
+
+const user2 = new User2("Jane", 22, "jane@mane.com");
+console.log(user2);
+
+// class with constructor and access modifier
+class User3 {
+    constructor(public name: string, public age: number, public email: string) { // public means the properties are initialized with the constructor itself
+        // Empty constructor implementation for the above constructor so that the properties are initialized with the constructor itself 
+    }
+}
+
+const user3 = new User3("Jane", 22, "mane@jane.com");
+console.log(user3);
