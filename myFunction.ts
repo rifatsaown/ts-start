@@ -27,3 +27,45 @@ const addtwo4 = (a: number, b: number, c: number = 0): number => {
     return a + b + c;
 }
 console.log(addtwo4(1, 2)); // 3
+
+
+// Function return can be number or string or any other type (Union type)
+const addtwo5 = (a: number, b: number): number | string => {
+    return a + b;
+    // return "Hello"; // No error
+}
+console.log(addtwo5(1, 2)); // 3
+
+
+// Function with rest parameter
+const addtwo6 = (a: number, b: number, ...c: number[]): number => {
+    let sum = a + b;
+    c.forEach((num) => {
+        sum += num;
+    });
+    return sum;
+}
+console.log(addtwo6(1, 2, 1, 5, 5)); // 14
+
+
+// Function with map and return type string
+const heros = ["Superman", "Batman", "Spiderman", "Ironman", "Thor"];
+const singleHero = heros.map((hero , index) : string => { // : string is the return type of the function
+    // return 5; // Error: Type '5' is not assignable to type 'string'.
+    return `${hero} is at index ${index}`;
+});
+console.log(singleHero); 
+
+
+// Return void
+const addtwo7 = (a: number, b: number): void => { // void is used when the function does not return anything
+    console.log(a + b);
+}
+addtwo7(1, 2); // 3
+
+
+// Return never
+const throwError = (message: string): never => { // never is used when the function never returns anything (not even void) 
+    throw new Error(message);
+}
+throwError("This is an error message"); // Error: This is an error message
