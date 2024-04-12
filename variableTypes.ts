@@ -3,11 +3,8 @@ let myString : string = "Hello World";
 let isTrue : boolean = true;
 
 let myNumber : number = 526616;
-
 let myNumber2 : number = 0xf00d;
-
 let myNumber3 : number = 0b1010;
-
 let myNumber4 : number = 0o744;
 
 let myArray : string[] = ["Hello", "World"];
