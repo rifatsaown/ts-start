@@ -9,13 +9,10 @@ let myNumber4 : number = 0o744;
 
 let myArray : string[] = ["Hello", "World"];
 let myArray2 : Array<string> = ["Hello", "World"];
-
 let myTuple : [string, number] = ["Hello", 526616];
 
 let myVoid : void = undefined; // or null
-
 let myNull : null = null;
-
 let myUndefined : undefined = undefined;
 
 let myObject : object = {};
