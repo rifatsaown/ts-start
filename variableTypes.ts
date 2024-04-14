@@ -18,7 +18,6 @@ let myUndefined : undefined = undefined;
 let myObject : object = {}; 
 
 let myObject2 : {name: string, age: number} = {name: "Hello", age: 526616};
-
 let myObject3 : {name: string, age: number} = {name: "Hello", age: 526616};
 
 let myUnion : string | number = "Hello";
