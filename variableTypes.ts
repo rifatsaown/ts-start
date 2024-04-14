@@ -15,12 +15,11 @@ let myVoid : void = undefined; // or null
 let myNull : null = null;
 let myUndefined : undefined = undefined;
 
-let myObject : object = {};
+let myObject : object = {}; 
 
 let myObject2 : {name: string, age: number} = {name: "Hello", age: 526616};
 
 let myObject3 : {name: string, age: number} = {name: "Hello", age: 526616};
 
 let myUnion : string | number = "Hello";
-
 let myUnion2 : string | number = 526616;
