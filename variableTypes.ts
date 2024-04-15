@@ -1,7 +1,7 @@
 let myString : string = "Hello World"; 
-
 let isTrue : boolean = true;
 
+// Number types
 let myNumber : number = 526616;
 let myNumber2 : number = 0xf00d;
 let myNumber3 : number = 0b1010;
