@@ -3,7 +3,6 @@ function createUser({ name, age }: { name: string, age: number }): { name: strin
     console.log(`Name: ${name}, Age: ${age}`);
     return { name, age };
 }
-
 createUser({ name: "John", age: 25 }); // Name: John, Age: 25
 
 // createUser({ name: "Jane", age: 22 , email: "r@s.com" }) // Error: Object literal may only specify known properties, and 'email' does not exist in type '{ name: string; age: number; }'.
