@@ -69,3 +69,17 @@ const throwError = (message: string): never => { // never is used when the funct
     throw new Error(message);
 }
 throwError("This is an error message"); // Error: This is an error message
+
+
+// object --> function -> method
+const poorUser = {
+    name : "Rifat",
+    ballance : 0,
+    addBallance(amount: number): number {
+        return this.ballance += amount;
+    }
+};
+
+const ballanceList: number[] = [100, 200, 300, 400, 500];
+
+const updatedBallance: number[] = ballanceList.map((ballance:number):number => poorUser.addBallance(ballance)); 

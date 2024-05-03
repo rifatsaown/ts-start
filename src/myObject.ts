@@ -92,7 +92,7 @@ const user1 : User1 = {
     }
 }
 
-console.log(user1);
+// console.log(user1);
 
 //--------------------------------- classes ------------------------------------//
 
@@ -109,7 +109,7 @@ class User2 {
 }
 
 const user2 = new User2("Jane", 22, "jane@mane.com");
-console.log(user2);
+// console.log(user2);
 
 // class with constructor and access modifier
 class User3 {
@@ -119,4 +119,26 @@ class User3 {
 }
 
 const user3 = new User3("Jane", 22, "mane@jane.com");
-console.log(user3);
+// console.log(user3);
+
+
+//--------------------------------- Leve 2 Cource ------------------------------------//
+
+const user4:{
+    companyName: "Programming Hero", // type -> Literal types (only this value is allowed)
+    readonly companyLocation: string, // type -> Readonly (cannot be changed)
+    firstName: string,
+    middleName?: string, // optional
+    lastName: string,
+    isMarried: boolean
+
+} = {
+    companyName: "Programming Hero",
+    companyLocation: "Dhaka",
+    firstName: "Jhankar",
+    lastName: "Mahbub",
+    isMarried: true,
+}
+// user4.companyName = "Programming Hero"; // Error: Cannot assign to 'companyName' because it is a read-only property.
+
+//--------------------------------- Up Level 2 Cource ------------------------------------//
