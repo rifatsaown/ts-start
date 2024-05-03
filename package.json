@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "ts-Practice",
   "main": "index.js",
-  "repository": "git@github.com:rifatsaown/ts-start.git",
+  "repository": "https://github.com/rifatsaown/ts-start",
   "author": "Md Rifat Hossen <rifatsaown0@gmail.com>",
   "license": "MIT",
   "dependencies": {
