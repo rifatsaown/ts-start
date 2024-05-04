@@ -1,10 +1,7 @@
 const isAuthenticated = null;
-
 const result = isAuthenticated ?? "Guest";
 
 console.log({ result});
-
-
 interface IUser {
     name: string;
     age: number;
@@ -23,7 +20,6 @@ const user: IUser = {
 
 const permanentAddress = user?.address?.permanentAddress ?? "Not Available"; // Nullish Coalescing
 console.log({ permanentAddress });
-
 
 
 export {}
