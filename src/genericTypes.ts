@@ -10,7 +10,12 @@ const rollNumber2: GenericType<number> = [3, 4, 5];
 const mentors2: GenericType<string> = ['Elie', 'Matt', 'Joel'];
 
 
-const user: GenericType<object> = [
+interface IPerson {
+    name: string;
+    age: number;
+}
+
+const user: GenericType<IPerson> = [
     { name: 'Elie', age: 25 },
     { name: 'Matt', age: 35 },
     { name: 'Joel', age: 30 },
