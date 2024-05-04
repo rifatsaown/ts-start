@@ -5,5 +5,3 @@ anything = "Hello World";
 
 anything = 10;
 (anything as number).toFixed(2); // Type Assertion
-
-
