@@ -34,4 +34,39 @@ const student3 = addCourseToStudent2({
 
 
 
+
+/*-------------- Generic Constraints With keyof Operator------------------- */
+
+type Vehicle = {
+    bike: string;
+    car: string;
+    truck: string;
+};
+
+type Owner = "bike" | "car" | "truck"; //Manually define the type
+
+type Owner2 = keyof Vehicle; // Get the type from Vehicle type
+
+const getProperty = <T, K extends keyof T>(obj: T, key: K) => {
+    return obj[key];
+}
+
+const vehicle: Vehicle = {
+    bike: "Yamaha",
+    car: "Toyota",
+    truck: "Volvo"
+}
+
+// const bike = getProperty(vehicle, "Rifat"); // Error because of Rifat is not in Vehicle type
+const bike = getProperty(vehicle, "bike"); // No Error because of bike is in Vehicle type
+
+const vehicle2 = {
+    model : "Toyota",
+    year: 2020
+}
+
+const model = getProperty(vehicle2, "model"); // No Error because of model is in vehicle2 type
+
+/*-------------- Generic Constraints With keyof Operator------------------- */
+
 export { }; // To prevent error of variable redeclaration
