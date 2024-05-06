@@ -7,4 +7,4 @@ class Animal {
 }
 
 const dog = new Animal('Dog', 'Canis lupus', 'Bark');
-dog.makeSound(); 
+dog.makeSound(); // Dog says Bark
