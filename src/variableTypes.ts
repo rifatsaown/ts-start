@@ -1,5 +1,6 @@
-let myString : string = "Hello World"; 
-let isTrue : boolean = true;
+// String types
+let myString : string = "Hello World"; // or 'Hello World' or `Hello World` (backtick) 
+let isTrue : boolean = true; // or false
 
 // Number types
 let myNumber : number = 526616;
