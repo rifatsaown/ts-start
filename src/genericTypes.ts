@@ -4,6 +4,7 @@ const rollNumber: Array<number> = [3, 4, 5];
 // const mentors: string[] = ['Elie', 'Matt', 'Joel'];
 const mentors: Array<string> = ['Elie', 'Matt', 'Joel'];
 
+// Generic Type
 type GenericType<T> = Array<T>;// Generic type
 
 const rollNumber2: GenericType<number> = [3, 4, 5];
