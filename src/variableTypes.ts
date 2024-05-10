@@ -1,5 +1,6 @@
 // String types
 let myString : string = "Hello World"; // or 'Hello World' or `Hello World` (backtick) 
+// Boolean types
 let isTrue : boolean = true; // or false
 
 // Number types
@@ -8,6 +9,7 @@ let myNumber2 : number = 0xf00d;
 let myNumber3 : number = 0b1010;
 let myNumber4 : number = 0o744;
 
+// Array types
 let myArray : string[] = ["Hello", "World"];
 let myArray2 : Array<string> = ["Hello", "World"];
 let myTuple : [string, number] = ["Hello", 526616];
