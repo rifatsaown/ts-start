@@ -1,6 +1,16 @@
 // Object Destructuring
 interface IUser {
-    
+    id: number;
+    name: {
+        firstName: string;
+        middleName: string;
+        lastName: string;
+    };
+    contactNo: string;
+    address: {
+        city: string;
+        country: string;
+    };
 }
 
 const user = {
