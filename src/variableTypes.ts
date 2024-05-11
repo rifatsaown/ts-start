@@ -15,11 +15,12 @@ let myArray2 : Array<string> = ["Hello", "World"];
 let myTuple : [string, number] = ["Hello", 526616];
 // myTuple[1] = "World"; // Error
 
-
+// Enum types
 let myVoid : void = undefined; // or null
 let myNull : null = null;
 let myUndefined : undefined = undefined;
 
+// Object types
 let myObject : object = {}; 
 
 let myObject2 : {name: string, age: number} = {name: "Hello", age: 526616};
