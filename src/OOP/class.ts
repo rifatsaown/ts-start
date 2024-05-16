@@ -10,5 +10,8 @@ class Animal {
     }
 }
 
+
+// Creating Object of Class Animal using new keyword
+// new keyword is used to create object of class
 const dog = new Animal('Dog', 'Canis lupus', 'Bark');
 dog.makeSound(); // Dog says Bark
