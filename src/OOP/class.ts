@@ -1,3 +1,7 @@
+// Class is a blueprint for creating objects.
+// Class is used to create objects with same properties and methods.
+
+// Class Declaration
 class Animal {
     constructor(public name: string, public species: string, public sound: string){}
 
