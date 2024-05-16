@@ -13,7 +13,7 @@ interface IUser {
     };
 }
 
-const user = {
+const user  = {
     id : 1,
     name : {
         firstName : "Md Rifat",
