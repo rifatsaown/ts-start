@@ -24,6 +24,7 @@ type AdminUser = {
     role: "admin";
 };
 
+// Type Guard Function to check if the user is Admin or Normal User 
 const displayUser = (user: NormalUser | AdminUser) => {
     if ("role" in user) { // Type Guard
         console.log(user.role);
