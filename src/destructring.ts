@@ -1,4 +1,8 @@
 // Object Destructuring
+interface IUser {
+    
+}
+
 const user = {
     id : 1,
     name : {
